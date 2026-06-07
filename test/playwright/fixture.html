@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PSG Test Fixture</title>
+  <style>body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:24px}</style>
+</head>
+<body>
+  <h1>PushState Guardian Fixture</h1>
+  <p id="psg-info">This page is used by Playwright E2E tests.</p>
+  <script>
+    // A small helper to ensure the page has focus for keyboard tests
+    window.addEventListener('load', () => document.body.tabIndex = -1);
+  </script>
+</body>
+</html>

@@ -1,0 +1,1620 @@
+{
+  "generatedAt": "2026-06-06T09:45:43.429Z",
+  "report": {
+    "startedAt": 1780739049789,
+    "push": 0,
+    "replace": 0,
+    "pop": 0,
+    "fullscreen": 0,
+    "popup": 0,
+    "notification": 0,
+    "clipboard": 0,
+    "userActions": 0,
+    "pushWithoutAction": 0,
+    "bursts": 0,
+    "historyLength": 2,
+    "timeline": [
+      {
+        "t": 1780739049942,
+        "type": "init",
+        "detail": "ready"
+      },
+      {
+        "t": 1780739051500,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739052218,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739053564,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739054949,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739055814,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739057036,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739058303,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739059393,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739060591,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739061791,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739062991,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739064190,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739065391,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739066591,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739067792,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739069006,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739070204,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739071390,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739072603,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739073800,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739074995,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739076201,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739077401,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739078600,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739079800,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739080999,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739082191,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739083391,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739084592,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739085795,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739086996,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739088196,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739089396,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739090594,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739091794,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739092990,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739094192,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739095392,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739096590,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739097791,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739098990,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739100190,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739101390,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739102592,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739103790,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739104991,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739106190,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739107390,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739108593,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739109795,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739110993,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739112194,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739113395,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739114597,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739115796,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739116990,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739118199,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739119394,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739120593,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739121328,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739121791,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739122932,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739122990,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739123107,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739123276,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739123460,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739123628,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739123777,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739123947,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739124123,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739124196,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739124314,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739124485,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739124658,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739124820,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739125043,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739125390,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739126592,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739127794,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739128993,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739130193,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739131393,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739132592,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739133792,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739134990,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739135591,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739136098,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739136190,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739136246,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739136395,
+        "type": "overlay_mode",
+        "detail": "full"
+      },
+      {
+        "t": 1780739137390,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739138594,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739139804,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739140992,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739142190,
+        "type": "heartbeat",
+        "detail": "2"
+      },
+      {
+        "t": 1780739143396,
+        "type": "heartbeat",
+        "detail": "2"
+      }
+    ],
+    "heatmapBuckets": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fingerprints": [],
+    "notes": [],
+    "confidence": 0.17673903123672408,
+    "riskScore": 0,
+    "riskLabel": "LOW",
+    "trustMode": "ignored",
+    "domainHost": "dictionary.cambridge.org",
+    "v8": {
+      "version": "8.4.1",
+      "preferences": {
+        "ambientMode": true,
+        "quietMode": true,
+        "expertDetail": true,
+        "revealCognition": true,
+        "emotionalSupport": true,
+        "adaptiveCalmness": true,
+        "autoShowOverlay": false,
+        "colorMode": "system",
+        "calmnessLevel": "balanced"
+      },
+      "ambientState": "coexisting",
+      "overlayMode": "hidden",
+      "visibleUrgency": "quiet",
+      "calmnessScore": 100,
+      "attentionBudget": 4,
+      "quietReason": "Low-risk activity is handled as ambient protection.",
+      "cognitiveSummary": "Behavioral cognition is running silently with no disruptive pattern.",
+      "compressedSummary": "Ambient protection active.",
+      "hiddenAuditTrail": [
+        {
+          "t": 1780739049942,
+          "type": "adaptive-calmness",
+          "detail": "calm-familiar/unknown/ambient"
+        },
+        {
+          "t": 1780739049942,
+          "type": "minimal-surface",
+          "detail": "full/full/system/manual"
+        },
+        {
+          "t": 1780739062991,
+          "type": "adaptive-calmness",
+          "detail": "calm-familiar/low/ambient"
+        }
+      ],
+      "invisibleCognition": {
+        "active": true,
+        "revealMode": true,
+        "behaviorCluster": "baseline",
+        "clusterConfidence": 0.35,
+        "trajectory": "stable",
+        "forecast": "No disruptive navigation pattern is expected.",
+        "quietForecast": "Stable browsing.",
+        "explanation": "Signals are low and cognition is staying invisible by default.",
+        "privacyBoundary": "local-session-only",
+        "lastEvaluatedAt": 1780739143395
+      },
+      "emotionalErgonomics": {
+        "active": true,
+        "tone": "steady",
+        "warningIntensity": "none",
+        "userMessage": "Everything looks calm right now.",
+        "reassurance": "Protection is active in the background.",
+        "recoveryAction": "Continue browsing normally.",
+        "timing": "ambient",
+        "fatigueScore": 100,
+        "autonomyReminder": "Details are visible because you asked for more context.",
+        "escalationTemplate": "calm-background",
+        "safetyReview": "copy-safe"
+      },
+      "adaptiveCalmness": {
+        "active": true,
+        "quietHoursActive": false,
+        "trustContinuityScore": 100,
+        "siteCalmProfile": "calm-familiar",
+        "alertCooldownUntil": 0,
+        "mitigationSoftness": "ambient",
+        "learnedPreference": "quieter-on-this-site",
+        "interruptibility": "low",
+        "explanation": "This site has enough local trust continuity to keep low-risk signals quiet.",
+        "quietHoursReason": "Normal hours.",
+        "localProfile": {
+          "averageRisk": 0,
+          "benignVisits": 59,
+          "host": "dictionary.cambridge.org",
+          "lastSeen": 1780739143395,
+          "visits": 12
+        },
+        "lastProfileSaveAt": 1780739143395
+      },
+      "cognitiveMinimalism": {
+        "active": true,
+        "minimalSurfaceMode": false,
+        "detailLevel": "full",
+        "plainSummary": "This page looks calm.",
+        "groupedReason": "No unusual page behavior noticed.",
+        "surfaceDensity": "full",
+        "progressiveDetail": true,
+        "expertDetailAvailable": true,
+        "themeMode": "system",
+        "overlayAutoShow": false,
+        "explanation": "Overlay stays out of sight during normal browsing and returns only for urgent risk or manual reveal."
+      },
+      "suppressedPrompts": 80,
+      "rawConfidence": 0.16999999999999998,
+      "smoothedConfidence": 0.17673903123672408,
+      "lastRiskLabel": "LOW",
+      "lastOverlayMode": "ambient",
+      "lastCognitionKey": "baseline/stable",
+      "lastEmotionalKey": "steady/none",
+      "lastAdaptiveKey": "calm-familiar/low/ambient",
+      "lastMinimalismKey": "full/full/system/manual"
+    },
+    "lastActionAt": 0,
+    "lastPushes": [],
+    "eventStream": [
+      {
+        "type": "init",
+        "meta": {
+          "detail": "ready"
+        },
+        "t": 1780739049942,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739051500,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739052217,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739053564,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739054949,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739055814,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739057036,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739058303,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739059393,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739060591,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739061791,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739062991,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739064190,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739065391,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739066591,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739067792,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739069006,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739070204,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739071390,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739072603,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739073800,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739074995,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739076201,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739077401,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739078600,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739079800,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739080999,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739082191,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739083391,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739084592,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739085795,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739086996,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739088196,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739089396,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739090594,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739091794,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739092990,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739094192,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739095392,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739096590,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739097791,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739098990,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739100190,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739101390,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739102592,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739103790,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739104991,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739106190,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739107390,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739108593,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739109795,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739110993,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739112194,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739113395,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739114597,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739115796,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739116990,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739118199,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739119394,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739120593,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739121328,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739121791,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739122932,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739122990,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739123107,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739123276,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739123459,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739123628,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739123777,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739123947,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739124123,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739124196,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739124314,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739124485,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739124658,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739124820,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739125043,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739125390,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739126592,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739127794,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739128993,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739130193,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739131392,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739132592,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739133792,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739134990,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739135591,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739136098,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739136190,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739136246,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "overlay_mode",
+        "meta": {
+          "detail": "full"
+        },
+        "t": 1780739136395,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739137390,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739138594,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739139804,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739140992,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739142190,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      },
+      {
+        "type": "heartbeat",
+        "meta": {
+          "detail": "2"
+        },
+        "t": 1780739143396,
+        "url": "https://dictionary.cambridge.org/vi/",
+        "host": "dictionary.cambridge.org",
+        "trusted": false
+      }
+    ],
+    "hiddenOverlay": false,
+    "compactOverlay": false
+  },
+  "score": 0,
+  "confidence": 0.16999999999999998,
+  "v8Preferences": {
+    "ambientMode": true,
+    "quietMode": true,
+    "expertDetail": true,
+    "revealCognition": true,
+    "emotionalSupport": true,
+    "adaptiveCalmness": true,
+    "autoShowOverlay": false,
+    "colorMode": "system",
+    "calmnessLevel": "balanced"
+  }
+}

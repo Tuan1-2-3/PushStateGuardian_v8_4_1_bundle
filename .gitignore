@@ -1,0 +1,24 @@
+# Dependency directories
+node_modules/
+
+# Playwright and test artifacts
+test-results/
+extension/test-results/
+playwright-report/
+
+# Temporary test user-data used during local runs
+test/tmp-user-data-dir/
+test/tmp-user-data-dir/**
+
+# Local workspace and editor files
+.vscode/
+.DS_Store
+
+# Local repo clone or nested repo
+repo/
+
+# Logs
+*.log
+
+# Build outputs
+dist/

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PushState Guardian v8.4.1</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body class="theme-system">
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <div class="eyebrow">Page Guardian</div>
+          <h1>Calm browsing</h1>
+          <p class="lead">PushState Guardian v8.4.1</p>
+        </div>
+        <div class="badge" id="riskBadge">CALM</div>
+      </header>
+
+      <section class="score-card">
+        <div class="score-meta">
+          <div class="score-label">Page signal</div>
+          <div class="score-value"><span id="riskScore">0</span><small>/100</small></div>
+          <div class="subtitle" id="riskSummary">Checking this page quietly...</div>
+        </div>
+        <div class="ring">
+          <div class="ring-fill" id="ringFill"></div>
+          <div class="ring-inner"><span id="ringText">0</span></div>
+        </div>
+      </section>
+
+      <section class="panel comfort-card">
+        <div class="panel-head">
+          <h2>Comfort</h2>
+          <span class="chip ghost" id="ambientStatus">quiet</span>
+        </div>
+        <p class="coexistence-summary" id="coexistenceSummary">Protection is active without taking over the page.</p>
+        <div class="settings-grid">
+          <label class="select-row">
+            <span>Theme</span>
+            <select id="colorMode">
+              <option value="system">System</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </label>
+          <label class="select-row">
+            <span>Calmness</span>
+            <select id="calmnessLevel">
+              <option value="calm">Calm</option>
+              <option value="balanced">Balanced</option>
+              <option value="direct">Direct</option>
+            </select>
+          </label>
+          <label class="toggle-row">
+            <input type="checkbox" id="autoShowOverlay" />
+            <span>Show overlay while browsing</span>
+          </label>
+          <label class="toggle-row">
+            <input type="checkbox" id="quietMode" />
+            <span>Fewer interruptions</span>
+          </label>
+          <label class="toggle-row">
+            <input type="checkbox" id="ambientMode" />
+            <span>Background protection</span>
+          </label>
+          <label class="toggle-row">
+            <input type="checkbox" id="adaptiveCalmness" />
+            <span>Learn calmness locally</span>
+          </label>
+          <label class="toggle-row">
+            <input type="checkbox" id="emotionalSupport" />
+            <span>Gentle wording</span>
+          </label>
+          <label class="toggle-row">
+            <input type="checkbox" id="revealCognition" />
+            <span>Show reasoning</span>
+          </label>
+          <label class="toggle-row">
+            <input type="checkbox" id="expertDetail" />
+            <span>Expert details</span>
+          </label>
+        </div>
+        <div class="coexistence-meta">
+          <span id="calmnessScore">Calm 100</span>
+          <span id="overlayMode">Overlay hidden</span>
+        </div>
+      </section>
+
+      <section class="panel surface-panel">
+        <div class="panel-head">
+          <h2>Surface</h2>
+          <span class="chip ghost" id="themeStatus">system</span>
+        </div>
+        <p class="coexistence-summary" id="surfaceSummary">Guardian keeps the interface quiet and keeps details available on demand.</p>
+        <div class="cognition-grid">
+          <div class="metric"><span>detail</span><strong id="detailLevel">minimal</strong></div>
+          <div class="metric"><span>visibility</span><strong id="surfaceDensity">quiet</strong></div>
+        </div>
+        <div class="coexistence-meta">
+          <span id="overlayAutoShow">manual overlay</span>
+          <span>local settings</span>
+        </div>
+      </section>
+
+      <section class="panel recovery-panel">
+        <div class="panel-head">
+          <h2>Next step</h2>
+          <span class="chip ghost" id="toneChip">steady</span>
+        </div>
+        <p class="coexistence-summary" id="emotionalMessage">Everything looks calm right now.</p>
+        <p class="recovery-action" id="recoveryAction">Continue browsing normally.</p>
+        <div class="coexistence-meta">
+          <span id="warningIntensity">No interruption</span>
+          <span id="fatigueScore">Fresh session</span>
+        </div>
+      </section>
+
+      <section class="panel adaptive-panel">
+        <div class="panel-head">
+          <h2>Calm behavior</h2>
+          <span class="chip ghost" id="softnessChip">ambient</span>
+        </div>
+        <p class="coexistence-summary" id="adaptiveExplanation">Guardian balances current page behavior, fatigue, and local site history.</p>
+        <div class="cognition-grid">
+          <div class="metric"><span>site familiarity</span><strong id="trustContinuity">0</strong></div>
+          <div class="metric"><span>interruptibility</span><strong id="interruptibility">available</strong></div>
+        </div>
+        <div class="coexistence-meta">
+          <span id="siteCalmProfile">new site</span>
+          <span id="quietHours">normal hours</span>
+        </div>
+      </section>
+
+      <section class="panel cognition-panel">
+        <div class="panel-head">
+          <h2>Behind the scenes</h2>
+          <span class="chip ghost" id="cognitionMode">hidden</span>
+        </div>
+        <p class="coexistence-summary" id="cognitionForecast">Stable browsing.</p>
+        <div class="cognition-grid">
+          <div class="metric"><span>behavior group</span><strong id="cognitionCluster">baseline</strong></div>
+          <div class="metric"><span>direction</span><strong id="cognitionTrajectory">stable</strong></div>
+        </div>
+        <p class="cognition-detail" id="cognitionExplanation">Reasoning stays local and appears only when requested.</p>
+      </section>
+
+      <section class="panel expert-panel">
+        <div class="panel-head">
+          <h2>Technical signals</h2>
+          <span class="chip" id="statusText">Quiet</span>
+        </div>
+        <div class="grid">
+          <div class="metric"><span>page changes</span><strong id="pushState">0</strong></div>
+          <div class="metric"><span>history edits</span><strong id="replaceState">0</strong></div>
+          <div class="metric"><span>back events</span><strong id="popstate">0</strong></div>
+          <div class="metric"><span>your actions</span><strong id="userInteractions">0</strong></div>
+          <div class="metric"><span>fullscreen</span><strong id="fullscreen">0</strong></div>
+          <div class="metric"><span>popup / notif</span><strong id="popupNotification">0</strong></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>What Guardian noticed</h2>
+          <span class="chip ghost" id="confidenceChip">steady</span>
+        </div>
+        <ul id="reasons" class="reasons"></ul>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Site comfort</h2>
+          <span class="chip ghost" id="trustChip">unknown</span>
+        </div>
+        <div class="trust-row">
+          <button id="trustBtn">Trust this site</button>
+          <button id="ignoreBtn" class="secondary">Keep quiet here</button>
+          <button id="fpBtn" class="tertiary">Report mistake</button>
+        </div>
+      </section>
+
+      <section class="panel expert-panel">
+        <div class="panel-head">
+          <h2>Background notes</h2>
+          <span class="chip ghost">audit</span>
+        </div>
+        <ul id="auditTrail" class="reasons"></ul>
+      </section>
+
+      <section class="panel expert-panel">
+        <div class="panel-head">
+          <h2>Activity timeline</h2>
+          <span class="chip ghost">exportable</span>
+        </div>
+        <div id="timeline" class="timeline"></div>
+      </section>
+
+      <section class="panel help-panel">
+        <div class="panel-head">
+          <h2>Quick help</h2>
+          <span class="chip ghost">shortcuts</span>
+        </div>
+          <p class="coexistence-summary">Need a quick look at Page Guardian? Try one of these:</p>
+          <ul class="help-list">
+            <li><strong id="shortcutReveal">Ctrl+Alt+G</strong> — briefly reveal the overlay to see what's happening.</li>
+            <li><strong id="shortcutCompact">Ctrl+Alt+C</strong> — switch to a smaller, compact view.</li>
+            <li><strong id="shortcutHide">Alt+X</strong> — hide the overlay from the page.</li>
+          </ul>
+          <p class="coexistence-summary">Or tap the <strong>Show overlay</strong> button below. If a browser shortcut conflicts, use the button instead.</p>
+      </section>
+
+      <section class="panel diagnostics-panel">
+        <div class="panel-head">
+          <h2>Diagnostics</h2>
+          <span class="chip ghost">debug</span>
+        </div>
+        <p class="coexistence-summary">Recent injection/message diagnostics collected from the extension background.</p>
+        <ul id="diagnosticsList" class="reasons"></ul>
+        <div class="diagnostics-actions" style="margin-top:10px; display:flex; gap:8px; align-items:center;">
+          <button id="diagRefreshBtn" class="tertiary">Refresh</button>
+          <button id="diagClearBtn" class="secondary">Clear diagnostics</button>
+          <button id="diagExportBtn">Export</button>
+          <div id="diagSpinner" class="diag-spinner" aria-hidden="true" title="working" style="width:18px; height:18px; margin-left:6px"></div>
+          <select id="diagTabSelect" style="min-width:200px">
+            <option value="">Select tab report…</option>
+          </select>
+          <button id="diagCopyTabBtn" class="tertiary">Copy</button>
+          <button id="diagExportTabBtn" class="secondary">Export selected tab</button>
+        </div>
+        <div id="diagMessage" class="diag-message" role="status" aria-live="polite"></div>
+      </section>
+
+      <footer class="footer">
+        <button id="showOverlayBtn" class="tertiary">Show overlay</button>
+        <button id="refreshBtn">Refresh</button>
+        <button id="exportBtn" class="secondary">Export audit</button>
+      </footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
