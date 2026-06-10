@@ -761,7 +761,7 @@ loadDiagnostics();
 
 // Populate help shortcut labels (keep in sync with overlay.js key handlers)
 (() => {
-  const revealShortcut = 'Ctrl+Alt+G';
+  const revealShortcut = 'Ctrl+Shift+G';
   const compactShortcut = 'Ctrl+Alt+C';
   const hideShortcut = 'Alt+X';
   const elReveal = document.getElementById('shortcutReveal');

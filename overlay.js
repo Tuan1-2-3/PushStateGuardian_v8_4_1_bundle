@@ -282,8 +282,8 @@
       markManualOverride();
       setCompact(!compact);
     }
-    // Ctrl+Alt+G: reveal overlay (replaces Alt+G) — avoids Gemini Alt+G
-    if (e.ctrlKey && e.altKey && e.key && e.key.toLowerCase() === 'g') {
+    // Ctrl+Shift+G: reveal overlay (was Ctrl+Alt+G) — avoid conflicts (e.g., Google Drive)
+    if (e.ctrlKey && e.shiftKey && e.key && e.key.toLowerCase() === 'g') {
       revealOverlay();
     }
   });

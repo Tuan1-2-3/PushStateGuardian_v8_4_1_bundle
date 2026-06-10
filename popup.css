@@ -27,9 +27,10 @@ body {
   --violet: #7356bf;
   --shadow: 0 14px 34px rgba(30, 64, 110, .12);
   margin: 0;
-  max-width: 360px;
+  max-width: 420px;
+  min-width: 320px;
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   box-sizing: border-box;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--app-bg);
@@ -93,7 +94,7 @@ body:not(.cognition-on) .cognition-detail {
 
 .shell {
   display: grid;
-  gap: 12px;
+  gap: 8px;
 }
 
 .hero {
@@ -152,9 +153,9 @@ h1 {
 .score-card {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
-  padding: 16px;
+  padding: 12px;
 }
 
 .score-label {
@@ -219,7 +220,7 @@ h1 {
 }
 
 .panel {
-  padding: 15px;
+  padding: 10px;
 }
 
 .comfort-card {
@@ -269,12 +270,12 @@ h1 {
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .panel h2 {
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 0;
 }
 
@@ -299,7 +300,7 @@ h1 {
 .settings-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 9px;
+  gap: 6px;
 }
 
 .toggle-row,
@@ -356,7 +357,7 @@ h1 {
 
 .metric {
   min-width: 0;
-  padding: 11px;
+  padding: 8px;
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--surface-2) 70%, transparent);
   border: 1px solid var(--border);
@@ -400,9 +401,9 @@ h1 {
 }
 
 .reasons li {
-  margin: 8px 0;
+  margin: 6px 0;
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .diagnostics-panel .reasons {
@@ -502,10 +503,10 @@ h1 {
 }
 
 button {
-  min-height: 40px;
+  min-height: 36px;
   border: none;
   border-radius: var(--radius);
-  padding: 10px 12px;
+  padding: 8px 10px;
   color: #ffffff;
   font-weight: 850;
   background: var(--primary);

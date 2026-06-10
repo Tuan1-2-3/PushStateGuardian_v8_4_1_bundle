@@ -43,6 +43,6 @@ Calm browsing protection with v8.4 cognitive minimalism, local themes, manual ov
 ## Shortcuts
 ## Shortcuts
 - `Alt+X`: hide/show overlay.
-- `Ctrl+Alt+C`: toggle compact overlay.
-- `Ctrl+Alt+G`: reveal overlay temporarily.
+-- `Ctrl+Alt+C`: toggle compact overlay.
+-- `Ctrl+Shift+G`: reveal overlay temporarily.
 - Use the "Show overlay" button in the popup for a manual reveal, or enable "Show overlay while browsing" in the popup settings to auto-show the overlay during browsing.
