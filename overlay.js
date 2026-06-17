@@ -282,8 +282,8 @@
       markManualOverride();
       setCompact(!compact);
     }
-    // Ctrl+Shift+G: reveal overlay (was Ctrl+Alt+G) — avoid conflicts (e.g., Google Drive)
-    if (e.ctrlKey && e.shiftKey && e.key && e.key.toLowerCase() === 'g') {
+    // Ctrl+Shift+F: reveal overlay (was Ctrl+Shift+G) — avoid conflicts (e.g., Google Drive)
+    if (e.ctrlKey && e.shiftKey && e.key && e.key.toLowerCase() === 'f') {
       revealOverlay();
     }
   });

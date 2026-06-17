@@ -104,8 +104,8 @@ test.describe('Overlay E2E', () => {
     await page.waitForSelector('#psrd-overlay-host', { state: 'attached', timeout: 15000 });
     // Ensure page has focus
     await page.focus('body');
-    // Reveal via Ctrl+Shift+G
-    await page.keyboard.press('Control+Shift+g');
+    // Reveal via Ctrl+Shift+F
+    await page.keyboard.press('Control+Shift+f');
     await page.waitForFunction(() => { const h = document.getElementById('psrd-overlay-host'); return h && !h.classList.contains('hidden'); }, { timeout: 8000 });
     // Compact via Ctrl+Alt+C
     await page.keyboard.press('Control+Alt+c');
