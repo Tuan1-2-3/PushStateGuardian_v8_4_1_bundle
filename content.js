@@ -728,16 +728,16 @@
       // Request the background service worker to inject the bridge into the page's main world.
       chrome.runtime.sendMessage({ type: 'INJECT_BRIDGE' }, (resp) => {
         if (chrome.runtime.lastError) {
-          try { chrome.runtime.sendMessage({ type: 'PSRD_DIAG', diag: { kind: 'inject_request_failed', error: chrome.runtime.lastError.message, url: location.href, ts: Date.now() } }); } catch (_) {}
+          try { chrome.runtime.sendMessage({ type: 'PSRD_DIAG', diag: { kind: 'inject_request_failed', error: chrome.runtime.lastError && chrome.runtime.lastError.message, url: location.href, ts: Date.now() } }, () => { if (chrome.runtime.lastError) {} }); } catch (_) {}
         } else if (!resp || !resp.ok) {
-          try { chrome.runtime.sendMessage({ type: 'PSRD_DIAG', diag: { kind: 'inject_failed', error: resp && resp.error ? resp.error : 'unknown', url: location.href, ts: Date.now() } }); } catch (_) {}
+          try { chrome.runtime.sendMessage({ type: 'PSRD_DIAG', diag: { kind: 'inject_failed', error: resp && resp.error ? resp.error : 'unknown', url: location.href, ts: Date.now() } }, () => { if (chrome.runtime.lastError) {} }); } catch (_) {}
         }
       });
       // If the bridge hasn't shown up quickly, record a diagnostic entry.
       setTimeout(() => {
         try {
           if (!window.__psrdPageInstalled) {
-            try { chrome.runtime.sendMessage({ type: 'PSRD_DIAG', diag: { kind: 'bridge_not_seen', url: location.href, ts: Date.now() } }); } catch (_) {}
+            try { chrome.runtime.sendMessage({ type: 'PSRD_DIAG', diag: { kind: 'bridge_not_seen', url: location.href, ts: Date.now() } }, () => { if (chrome.runtime.lastError) {} }); } catch (_) {}
           }
         } catch (_) {}
       }, 1500);
@@ -792,6 +792,7 @@
           __psrd: true,
           type: 'PSRD_OVERLAY_COMMAND',
           payload: {
+            reveal: !state.hiddenOverlay,
             hiddenOverlay: state.hiddenOverlay,
             compactOverlay: state.compactOverlay,
             duration: 45000

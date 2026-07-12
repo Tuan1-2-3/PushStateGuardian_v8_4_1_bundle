@@ -5,6 +5,36 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (!msg || !msg.type) return false;
 
+  if (msg.type === 'PSRD_SET_OVERLAY_MODE') {
+    const preferredTabId = typeof msg.tabId === 'number' ? msg.tabId : (sender && sender.tab && sender.tab.id);
+    chrome.tabs.query({}, (tabs) => {
+      const targets = (tabs || [])
+        .filter((tab) => tab && typeof tab.id === 'number' && tab.url && !tab.url.startsWith('chrome://') && !tab.url.startsWith('edge://') && !tab.url.startsWith('about:'))
+        .map((tab) => tab.id);
+      const fallbackTargets = typeof preferredTabId === 'number' ? [preferredTabId] : [];
+      const finalTargets = targets.length ? targets : fallbackTargets;
+      if (!finalTargets.length) {
+        sendResponse({ ok: false, error: 'no_tab' });
+        return;
+      }
+      let completed = 0;
+      finalTargets.forEach((tabId) => {
+        chrome.tabs.sendMessage(tabId, {
+          type: 'PSRD_SET_OVERLAY_MODE',
+          hiddenOverlay: !!msg.hiddenOverlay,
+          compactOverlay: !!msg.compactOverlay,
+          duration: msg.duration || 45000
+        }, () => {
+          completed += 1;
+          if (completed === finalTargets.length) {
+            sendResponse({ ok: true, tabCount: finalTargets.length });
+          }
+        });
+      });
+    });
+    return true;
+  }
+
   if (msg.type === 'INJECT_BRIDGE') {
     const tabId = sender && sender.tab && sender.tab.id;
     if (!tabId) {
@@ -62,7 +92,10 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     const tabId = sender && sender.tab && sender.tab.id;
     const key = tabId ? `psrdLatestReport_${tabId}` : `psrdLatestReport_global`;
     try { chrome.storage.local.set({ [key]: msg.report }, () => {}); } catch (e) {}
-    try { chrome.runtime.sendMessage({ type: 'PSRD_REPORT_PUSH', report: msg.report }); } catch (_) {}
+    chrome.runtime.sendMessage({ type: 'PSRD_REPORT_PUSH', report: msg.report, tabId })
+      .catch(() => {
+        // No receiver available (popup/service worker not present) — ignore silently
+      });
     sendResponse({ ok: true });
     return true;
   }

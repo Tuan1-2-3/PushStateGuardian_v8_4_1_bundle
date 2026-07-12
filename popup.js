@@ -589,15 +589,27 @@ async function updateV8Prefs(patch) {
 async function showOverlayManually() {
   let tabId = currentTabId;
   if (tabId == null) {
-    const tab = await getActiveTab();
+    const candidates = await new Promise((resolve) => {
+      chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => resolve(tabs || []));
+    });
+    const tab = (candidates || []).find((candidate) => candidate && typeof candidate.id === 'number' && candidate.url && !candidate.url.startsWith('chrome://') && !candidate.url.startsWith('edge://') && !candidate.url.startsWith('about:')) || null;
     tabId = tab && typeof tab.id === 'number' ? tab.id : null;
   }
+  if (tabId == null) {
+    const fallbackTabs = await new Promise((resolve) => {
+      chrome.tabs.query({}, (tabs) => resolve(tabs || []));
+    });
+    const fallbackTab = (fallbackTabs || []).find((candidate) => candidate && typeof candidate.id === 'number' && candidate.url && !candidate.url.startsWith('chrome://') && !candidate.url.startsWith('edge://') && !candidate.url.startsWith('about:')) || null;
+    tabId = fallbackTab && typeof fallbackTab.id === 'number' ? fallbackTab.id : null;
+  }
   if (tabId == null) return;
-  chrome.tabs.sendMessage(tabId, {
+  chrome.runtime.sendMessage({
     type: 'PSRD_SET_OVERLAY_MODE',
+    tabId,
     hiddenOverlay: false,
-    compactOverlay: false
-  }, (response) => {
+    compactOverlay: false,
+    duration: 45000
+  }, () => {
     if (chrome.runtime.lastError) {
       console.warn('showOverlayManually: sendMessage failed:', chrome.runtime.lastError.message);
     }
@@ -774,7 +786,9 @@ loadDiagnostics();
 
 chrome.runtime.onMessage.addListener((msg) => {
   if (msg && msg.type === 'PSRD_REPORT_PUSH' && msg.report) {
-    render(msg.report);
+    if (msg.tabId == null || msg.tabId === currentTabId) {
+      render(msg.report);
+    }
   }
 });
 

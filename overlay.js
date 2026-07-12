@@ -369,6 +369,11 @@
     host.classList.toggle('ambient', currentOverlayMode === 'ambient' || currentOverlayMode === 'hidden');
     host.classList.toggle('minimal', !expertDetail);
     host.classList.toggle('reducedMotion', (v8.adaptiveCalmness && v8.adaptiveCalmness.interruptibility === 'low') || (emotional.fatigueScore || 0) > 55);
+    if (Date.now() < manualOverrideUntil) {
+      setHidden(hidden);
+      setCompact(compact);
+      return;
+    }
     if (!autoShowOverlay && label !== 'HIGH' && Date.now() >= manualOverrideUntil) {
       setHidden(true);
       setCompact(true);
@@ -379,11 +384,14 @@
       setCompact(true);
       return;
     }
-    if (Date.now() >= manualOverrideUntil || label === 'HIGH') {
-      if (currentOverlayMode === 'full' || label === 'HIGH') {
+    if (label === 'HIGH') {
+      setHidden(false);
+      setCompact(false);
+    } else {
+      if (currentOverlayMode === 'full') {
         setHidden(false);
         setCompact(false);
-      } else {
+      } else if (currentOverlayMode === 'compact' || currentOverlayMode === 'ambient') {
         setHidden(false);
         setCompact(true);
       }
@@ -448,10 +456,12 @@
       const payload = e.data.payload || {};
       if (payload.reveal === true) {
         revealOverlay(payload.duration || 45000);
+        updateVisual(lastReport || {});
       } else if (typeof payload.hiddenOverlay === 'boolean') {
         markManualOverride(payload.duration || 30000);
         setHidden(payload.hiddenOverlay);
         if (typeof payload.compactOverlay === 'boolean') setCompact(payload.compactOverlay);
+        updateVisual(lastReport || {});
       }
     }
   });

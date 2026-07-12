@@ -73,6 +73,39 @@ test.describe('Overlay E2E', () => {
     await context.close();
   });
 
+  test('popup show overlay button reveals overlay', async ({}, testInfo) => {
+    const { context, page } = await launchContext(extensionPath, dirs.videos);
+    const srv = await startServer(extensionPath);
+    await page.goto(srv.url, { waitUntil: 'load' });
+    await page.waitForSelector('#psrd-overlay-host', { state: 'attached', timeout: 15000 });
+
+    let extensionId = null;
+    await page.waitForTimeout(1000);
+    try {
+      const sw = context.serviceWorkers().find((s) => s.url().startsWith('chrome-extension://'));
+      if (sw) extensionId = new URL(sw.url()).hostname;
+      else {
+        const bg = context.backgroundPages().find((p) => p.url().startsWith('chrome-extension://'));
+        if (bg) extensionId = new URL(bg.url()).hostname;
+      }
+    } catch (e) {}
+    expect(extensionId).toBeTruthy();
+
+    const popup = await context.newPage();
+    await popup.goto(`chrome-extension://${extensionId}/popup.html`, { waitUntil: 'load' });
+    await popup.waitForSelector('#showOverlayBtn', { timeout: 10000 });
+    await popup.click('#showOverlayBtn');
+
+    await page.waitForFunction(() => {
+      const host = document.getElementById('psrd-overlay-host');
+      return host && !host.classList.contains('hidden');
+    }, { timeout: 8000 });
+
+    try { const vid = await page.video(); if (vid) { const vpath = await vid.path(); await testInfo.attach('video', { path: vpath, contentType: 'video/webm' }); } } catch (e) {}
+    try { srv.server.close(); } catch (e) {}
+    await context.close();
+  });
+
   test('compact via postMessage', async ({}, testInfo) => {
     const { context, page } = await launchContext(extensionPath, dirs.videos);
     const srv = await startServer(extensionPath);
