@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PSG Iframe Fixture</title>
+  <style>body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:24px}</style>
+</head>
+<body>
+  <h1>PushState Guardian Iframe Fixture</h1>
+  <p>This fixture embeds an iframe via srcdoc to avoid network recursion.</p>
+  <iframe id="inner" srcdoc="<!doctype html><html><body><h2>Inner Frame</h2><p>Frame content</p></body></html>" style="width:600px;height:240px;border:1px solid #ccc"></iframe>
+  <script>window.addEventListener('load', () => document.body.tabIndex = -1);</script>
+</body>
+</html>
