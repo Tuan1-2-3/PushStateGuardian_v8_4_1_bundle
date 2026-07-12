@@ -20,6 +20,7 @@ Calm browsing protection with v8.4 cognitive minimalism, local themes, manual ov
 - `V8_2.md`
 - `V8_3.md`
 - `V8_4.md`
+- `AGENT_CHANGELOG.md`
 
 ## Install locally
 1. Open `chrome://extensions`.
